@@ -36,11 +36,11 @@ export default function renderApp() {
     const num = random(1, 10)
 
     document.querySelector('#even-num').textContent =
-      num % 2 !== 0 ? num : num + 1
+      num % 2 === 0 ? num : num + 1
   })
 
   btnGetOdd.addEventListener('click', () => {
-    const num = random(1, 10)
+    const num = random(0, 10)
 
     document.querySelector('#odd-num').textContent =
       num % 2 === 0 ? num : num - 1

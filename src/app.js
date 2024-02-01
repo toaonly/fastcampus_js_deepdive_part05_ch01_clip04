@@ -40,7 +40,7 @@ export default function renderApp() {
   })
 
   btnGetOdd.addEventListener('click', () => {
-    const num = random(0, 10)
+    const num = random(1, 10)
 
     document.querySelector('#odd-num').textContent =
       num % 2 === 0 ? num : num - 1
